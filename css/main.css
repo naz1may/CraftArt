@@ -1,0 +1,44 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Навигация */
+.nav {
+    padding: 40px 0;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.nav__row {
+}
+.nav__logo {
+}
+.fa-solid {
+}
+.fa-stroopwafel {
+}
+.nav__list {
+}
+.nav__item {
+}
+.nav__link {
+}
+.nav__icons {
+}
+.nav__search {
+}
+.fa-magnifying-glass {
+}
+.nav__selected {
+}
+.fa-heart {
+}
+.nav__account {
+}
+.fa-right-to-bracket {
+}
