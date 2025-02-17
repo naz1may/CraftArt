@@ -24,3 +24,19 @@
 //         console.log('btnNext');
 //     })
 // })
+
+// Функция для перенаправления на страницу каталога
+function searchRedirect() {
+    // Получаем текст из поля поиска
+    const searchQuery = document.querySelector('.search-field').value.trim();
+
+    // Проверяем, что текст не пустой
+    if (searchQuery !== "") {
+        // Сохраняем запрос в локальном хранилище
+        localStorage.setItem('searchQuery', searchQuery);
+        // Переходим на страницу каталога
+        window.location.href = 'catalog.html';
+    } else {
+        alert('Введите запрос для поиска!');
+    }
+}
