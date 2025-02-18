@@ -136,7 +136,7 @@ body {
     /*background-color: rgb(80, 255, 147);*/
 }
 .nav__item {
-    /* margin: 0 15px; */
+    margin: 0 15px;
 }
 .nav__link {
     color: white;
