@@ -1,30 +1,3 @@
-// $(document).ready(function(){
-//     console.log('Документ загружен!');
-    
-//     let position = 0;
-//     const slidesToShow = 1;
-//     const slidesToScroll = 1;
-//     const container = $('.slider-container');
-//     const track = $('.slider-track');
-//     const item = $('.slider-item');
-//     const btnPrev = $('.btn-prev');
-//     const btnNext = $('.btn-next');
-//     const itemWidth = container.width() / slidesToShow;
-
-//     item.each(function (index, item){
-//         $(item).css({
-//             minWidth: itemWidth,
-//         })
-//     });
-
-//     btnPrev.click(function(){
-//         console.log('btnPrev');
-//     })
-//     btnNext.click(function(){
-//         console.log('btnNext');
-//     })
-// })
-
 // Функция для перенаправления на страницу каталога
 function searchRedirect() {
     // Получаем текст из поля поиска
@@ -34,9 +7,25 @@ function searchRedirect() {
     if (searchQuery !== "") {
         // Сохраняем запрос в локальном хранилище
         localStorage.setItem('searchQuery', searchQuery);
-        // Переходим на страницу каталога
-        window.location.href = 'catalog.html';
+        // Переходим на страницу каталога с поисковым запросом в URL
+        window.location.href = 'catalog.html?search=' + encodeURIComponent(searchQuery);
     } else {
         alert('Введите запрос для поиска!');
     }
 }
+
+// Добавляем обработчики событий
+document.addEventListener('DOMContentLoaded', function () {
+    const searchField = document.querySelector('.search-field');
+    const searchButton = document.querySelector('.search-btn');
+
+    // Обработчик события для нажатия клавиши Enter
+    searchField.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            searchRedirect(); // Вызываем функцию поиска
+        }
+    });
+
+    // Обработчик события для клика по кнопке поиска
+    searchButton.addEventListener('click', searchRedirect);
+});

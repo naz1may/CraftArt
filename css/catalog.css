@@ -186,3 +186,9 @@ body {
 .nav__account i:hover {
     color: #FFD700;
 }
+
+
+/*Карточки*/
+.product.img {
+    font-size: 30px;
+}
