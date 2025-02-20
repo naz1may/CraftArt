@@ -1,0 +1,219 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation */
+.nav {
+    background-color: #003366;
+    padding: 10px 0;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.nav__logo {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Lucida Handwriting', cursive;
+    text-decoration: none;
+    color: #FFD700;
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo i {
+    font-size: 80px;
+    color: #FFD700;
+    margin-left: 10px;
+}
+
+.nav__second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+}
+
+.nav__search_container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Add space between search bar and links */
+}
+
+.search-field {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%; /* Adjust width of the search bar */
+    height: 40px;
+    line-height: 40px;
+}
+
+.search-field::placeholder {
+    font-size: 16px;
+    color: #aaa;
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+.search-btn {
+    background-color: #FFD700;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.search-btn i {
+    font-size: 18px;
+}
+
+.nav__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    justify-content: space-evenly;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    /* width: 260px; */
+    /* height: 40px; */
+    /*background-color: rgb(80, 255, 147);*/
+}
+
+.nav__item {
+    margin: 0 15px;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 20px;
+}
+
+.nav__link:hover {
+    color: #FFD700;
+}
+
+.nav__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.nav__selected i, .nav__account i {
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.nav__selected i:hover, .nav__account i:hover {
+    color: #FFD700;
+}
+
+/* Catalog Content */
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #003366;
+    margin: 40px 0;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin: 15px;
+    color: #003366;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.product-card .category {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin: 0 15px 15px;
+}
+
+/* Footer */
+.footer-container {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-container a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #FFD700;
+}
+
+.f-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
