@@ -134,7 +134,6 @@ body {
     /* width: 260px; */
     /* height: 40px; */
     /*background-color: rgb(80, 255, 147);*/
-
 }
 .nav__item {
     margin: 0 15px;
@@ -186,102 +185,4 @@ body {
 
 .nav__account i:hover {
     color: #FFD700;
-}
-
-
-/*Страница*/
-.main {
-    min-height: 100vh;
-    /* background-color: #ADD8E6; */
-    background-color: #B0C4DE;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.photo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding-top: 40px;
-    padding-bottom: 50px;
-}
-
-.photo-container img {
-    width: 75%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: auto;
-}
-
-.categories-container {
-    font-size: 45px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.category-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px;
-    width: 30%;
-    text-align: center;
-}
-
-.category-item i {
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #003366;
-}
-
-.category-item span {
-    font-size: 16px;
-    color: #333;
-}
-
-.fa-earth-americas {
-}
-.fa-palette {
-}
-.fa-scissors {
-}
-.fa-rocket {
-}
-.fa-hands-bubbles {
-}
-.fa-book {
-}
-.fa-pen-ruler {
-}
-.fa-star-and-crescent {
-}
-.fa-umbrella {
-}
-
-/*Подвал*/
-.footer-container {
-}
-.sentence {
-}
-
-.contact-info {
-}
-.contact-us {
-}
-.social-media {
-}
-.fab {
-}
-.fa-facebook {
-}
-.fa-twitter {
-}
-.fa-instagram {
-}
-.f-bottom {
 }

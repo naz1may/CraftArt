@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftArt</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Навигация -->
+    <nav class="nav">
+        <!-- <div class="container"> -->
+            <div class="nav__row">
+                <a href="index.html" class="nav__logo">
+                    CraftArt
+                    <i class="fa-solid fa-stroopwafel"></i>
+                </a>
+
+                <div class="nav__second">
+                    <div class="nav__search_container">
+                        <input type="text" class="search-field" placeholder="Search...">
+                        <button class="search-btn" onclick="searchRedirect()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>    
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="catalog.html" class="nav__link">Catalog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">About Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__icons">
+                    <div class="nav__selected">
+                        <a href="#">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                    <div class="nav__account">
+                        <a href="#">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </nav>
+
+<!-- Страница -->
+<div class="main">
+    <div class="photo-container">
+        <img src="../img/photo1.png" alt="">
+        <img src="../img/photo2.png" alt="">
+        <img src="../img/photo3.png" alt="">
+    </div>
+
+    <div class="categories-container">
+        <a href="catalog.html?category=all" class="category-item">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>All goods</span>
+        </a>
+        <a href="catalog.html?category=painting" class="category-item">
+            <i class="fa-solid fa-palette"></i>
+            <span>Painting</span>
+        </a>
+        <a href="catalog.html?category=handicrafts" class="category-item">
+            <i class="fa-solid fa-scissors"></i>
+            <span>Handicrafts</span>
+        </a>
+        <a href="catalog.html?category=modeling" class="category-item">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Modeling</span>
+        </a>
+        <a href="catalog.html?category=sculpture" class="category-item">
+            <i class="fa-solid fa-hands-bubbles"></i>
+            <span>Sculpture</span>
+        </a>
+        <a href="catalog.html?category=books" class="category-item">
+            <i class="fa-solid fa-book"></i>
+            <span>Books</span>
+        </a>
+        <a href="catalog.html?category=stationery" class="category-item">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <span>Stationery</span>
+        </a>
+        <a href="catalog.html?category=accessories" class="category-item">
+            <i class="fa-solid fa-star-and-crescent"></i>
+            <span>Accessories</span>
+        </a>
+        <a href="catalog.html?category=something" class="category-item">
+            <i class="fa-solid fa-umbrella"></i>
+            <span>Something</span>
+        </a>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer-container">
+    <div class="sentence">
+        <p>CraftArt is your go-to hobby and craft store. Find everything you need for DIY, painting, sculpting, and modeling.</p>
+    </div>
+    <div class="contact-info">
+        <p> Contact Us </p>
+    </div>
+    <div class="contact-info">
+        <p>Phone: +1 (234) 567-89-00</p>
+        <p>Email: <a href="mailto:contact@craftart.com">contact@craftart.com</a></p>
+        <p>Address: 456 Creative Lane, Art City</p>
+    </div>
+    <div class="social-media">
+        <a href="https://facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+    <div class="f-bottom">
+        <p>&copy; 2025 CraftArt. All rights reserved.</p>
+    </div>
+</div>
+
+
+<script src="../js/search.js" defer></script>
+<script src="../js/catalog.js" defer></script>
+
+</body>
+</html>
