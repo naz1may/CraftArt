@@ -7,6 +7,7 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
+    background-color: #B0C4DE;
     color: #333;
 }
 
@@ -148,7 +149,7 @@ h1 {
 }
 
 .product-card {
-    background: white;
+    background:  white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -170,12 +171,18 @@ h1 {
     font-size: 24px;
     margin: 15px;
     color: #003366;
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+.product-card h3:hover {
+    color: #FFD700;
 }
 
 .product-card p {
     font-size: 16px;
     margin: 0 15px 15px;
     color: #666;
+    font-family: 'Lucida Handwriting', cursive;
 }
 
 .product-card .category {

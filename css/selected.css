@@ -1,0 +1,115 @@
+/* General styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and background styling */
+body {
+    background-color: #B0C4DE; /* Цвет остается прежним */
+    font-family: 'Lucida Handwriting', cursive;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main container */
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Favorites container */
+.favorites-container {
+    text-align: center;
+    background-color: #fff187; /* Цвет остается прежним */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Title styles */
+.favorites-container h1 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Paragraph styles */
+.favorites-container p {
+    font-size: 22px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Message section styles */
+.favorites-container .favorites-message p {
+    font-size: 20px;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Button container */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* General button styles */
+button {
+    font-size: 18px;
+    padding: 12px 25px;
+    margin: 10px;
+    border: 2px solid transparent; /* Стандартный border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Back to Home button */
+.home-btn {
+    color: #003366;
+    background-color: #FFD700;
+    border-color: #003366;
+}
+
+.home-btn:hover {
+    background-color: #003366;
+    color: #FFD700;
+}
+
+/* Go to Log In button */
+.enter-btn {
+    background-color: #FFD700;
+    color: #003366;
+    border-color: #FFD700;
+}
+
+.enter-btn:hover {
+    background-color: #003366;
+    color: red;
+}
+
+/* Link styling for registration link */
+.register-link {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.register-link:hover {
+    /* text-decoration: underline; */
+    color: #003366;
+}

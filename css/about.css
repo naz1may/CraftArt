@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #B0C4DE;
 }
 
 /* Навигация */
@@ -186,3 +187,46 @@ body {
 .nav__account i:hover {
     color: #FFD700;
 }
+
+
+  /* Стили страницы */
+  .main {
+    background-color: #B0C4DE;
+  }
+
+  section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #fff187;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили для заголовка "About Us" */
+  /* .main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Lucida Handwriting', cursive;
+    text-align: center;#003366
+    font-size: 48px;
+    color: #FFD700;
+    color: #003366;
+  } */
+  
+
+  section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #F1E0C6;
+    color: black;
+    margin-bottom: 15px;
+    font-family: 'Lucida Handwriting', cursive;
+  }
+  
+  
+  strong {
+    color: #FFD700;
+    color: #003366;
+  }
+  
