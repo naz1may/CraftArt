@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="..\craftart\CRAFT\css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <a href="index.html" class="login-button">Login</a> <!-- Главная страница, переход по клику -->
+        
+        <form action="submit_login.php" method="POST">
+            <div class="input-box">
+                <input type="text" id="login-username" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="login-password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+    
+            <button type="submit" class="btn">Login</button>
+
+            <div class="login-link">
+                <p>Don't have an account? <a href="registration.html">Register</a></p>
+            </div>
+        </form>
+
+        <div class="warning">
+            <p> Login is temporarily unavailable. </p>
+        </div>
+        
+    </div>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Останавливаем стандартную отправку формы
+    
+            // Получаем введенные данные
+            let username = document.querySelector("#login-username").value;
+            let password = document.querySelector("#login-password").value;
+    
+            // Получаем сохраненные данные из localStorage
+            let savedUsername = localStorage.getItem("username");
+            let savedPassword = localStorage.getItem("password");
+    
+            // Проверяем логин и пароль
+            if (username === savedUsername && password === savedPassword) {
+                alert("Вход выполнен успешно!"); // Показываем сообщение
+                localStorage.setItem("isLoggedIn", "true"); // Сохраняем вход
+                window.location.href = "index.html"; // Переход на главную страницу
+            } else {
+                alert("Неверный логин или пароль!"); // Ошибка
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>

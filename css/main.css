@@ -266,23 +266,245 @@ body {
 
 /*Подвал*/
 .footer-container {
-}
-.sentence {
+    background-color: #363b44;
+    align-items: flex-start; 
+    color: #fff;
+    padding: 40px 20px;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+
+    
 }
 
-.contact-info {
+.footer-top {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Lucida Handwriting';
+    max-width: 600px;
+  }
+
+.logo-button {
+    color: #fff; 
+    font-size: 28px; 
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px; 
+    background-color: #363b44;
+    transition: background-color 0.3s, color 0.3s; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 10px;
+  }
+  .logo-text {
+    display: inline-block;
+  }
+  
+ .logo-button i {
+    font-size: 26px;
+    color: #fff; 
+    transition: color 0.3s;
+    margin-left: -5px;
+  }
+
+  .logo-button:hover {
+    background-color: #ffd700; 
+    color: #003366; 
+    cursor: pointer; 
+  }
+
+  .logo-button:hover i {
+    color: #003366;
+  }
+
+  .logo-button:focus {
+    outline: none; 
+  }
+  
+
+.logo-subtext {
+    font-size: 14px;
+    margin: 3px;
+    font-family: 'Lucida Handwriting';
+    color: #bbb;
+
 }
-.contact-us {
+
+/* line */ 
+.footer-line {
+    width: 100%;
+    height: 2px;
+    background-color: #292c32 ;
+    border: none;
+    margin: 10px 0;
+    opacity: 0.7;
 }
-.social-media {
+
+.footer-content {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width:100%;
+    gap: 40px;
+    align-items: flex-start;
+    
 }
+
+.footer-contacts, .footer-catalog, .footer-social {
+    color:#ffd700;
+    width: 30%;
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 18px;
+  }
+
+.footer-contacts h3, .footer-catalog h3 {
+  color: #ffd700;
+  margin-bottom: 1px;
+  font-size: 22px;
+}
+
+/* catalog*/
+
+.footer-catalog {
+    align-items: center; 
+    text-align: center;
+}
+
+.footer-catalog ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-catalog li {
+  margin-bottom: 5px;
+}
+
+.footer-catalog a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+.footer-catalog a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+  }
+
+
+.footer-contacts p {
+    margin-bottom: 5px;
+    color: #bbb;
+    text-align: left;
+}
+.footer-contacts {
+    max-width: 300px;
+    color: #bbb;
+}
+
+.footer-contacts a {
+    text-decoration: none;
+    color: #bbb;
+}
+
+.footer-contacts a:hover{
+    text-decoration: underline;
+    color: #ffd700;
+}
+
+
+.footer-social {
+    /* display: flex;
+    list-style-type: none; */
+    align-items: center;
+    /* justify-content: flex-start; */
+    margin-top: 0; 
+    /* text-align: center;
+    flex-direction: column; */
+     
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+ 
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social a:hover {
+    text-decoration: none;
+}
+
+.footer-social a:hover .fa-facebook,
+.footer-social a:hover p {
+    color: #1877F2; 
+}
+
+
+.footer-social a:hover .fa-twitter,
+.footer-social a:hover p {
+    color: #1DA1F2; 
+}
+
+
+.footer-social a:hover .fa-instagram,
+.footer-social a:hover p {
+    color: #E4405F; 
+}
+
+  .footer-social p {
+    color:#bbb;
+  }
+  
+
+  @media (max-width: 768px) {
+    .footer-content {
+      text-align: left;
+      padding-left: 20px;
+    }
+    .footer-links {
+      text-align: left;
+    }
+  }
+  
 .fab {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.fab:hover {
+
 }
 .fa-facebook {
+    text-decoration: none;
+}
+
+.fa-facebook:hover {
+    text-decoration: none;
 }
 .fa-twitter {
 }
 .fa-instagram {
 }
 .f-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
 }

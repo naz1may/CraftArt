@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="..\craftart\CRAFT\css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+       <form action="register.php" method="POST">
+        <h1>Register</h1>
+        
+        <div class="input-box">
+            <input type="text" id="register-username" name="username" placeholder="Username" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+            <input type="email" id="register-email" name="email" placeholder="Email" required>
+            <i class='bx bxs-envelope'></i>
+        </div>
+        <div class="input-box">
+            <input type="password" id="register-password" name="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html">Login</a> </p>
+        </div>
+
+    </form>
+
+    <div class="warning">
+        <p> Login is temporarily unavailable. </p>
+    </div>
+    
+    </div>
+
+    
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Останавливаем стандартную отправку формы
+            
+            // Получаем значения полей
+            let username = document.querySelector("#register-username").value;
+            let password = document.querySelector("#register-password").value;
+        
+            // Сохраняем в localStorage (как временную базу данных)
+            localStorage.setItem("username", username);
+            localStorage.setItem("password", password);
+        
+            alert("Registration successful! Now log in.");
+            window.location.href = "login.html"; // Перенаправляем на логин
+        });
+    </script>
+        
+
+</body>
+</html>
