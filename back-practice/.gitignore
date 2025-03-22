@@ -1,0 +1,34 @@
+# node_modules
+node_modules/
+node_modules
+
+# Лог-файлы
+*.log
+
+# Файлы окружения
+.env
+
+# Настройки редакторов
+.vscode/
+
+# Другие временные файлы
+*.swp
+.DS_Store
+Thumbs.db
+
+# Игнорируем системные папки, к которым нет доступа
+Application Data/
+Cookies/
+Local Settings/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Мои документы/
+Шаблоны/
+
+# Игнорируем папки, которые не должны попадать в репозиторий
+node_modules/
+.vscode/
+*.log
+.env
