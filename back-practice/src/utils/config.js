@@ -13,3 +13,4 @@ export {
 };
 
 console.log(process.env);
+//console.log('PG_URI:', process.env.PG_URI);
